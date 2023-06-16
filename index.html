@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>ToDo List</title>
+</head>
+<body>
+	<div class="container">
+		<div class="display-4 mb-2">ToDo App</div>
+		<div class="h4 mb-5">список задач на сегодня</div>
+
+		<!-- List of tasks -->
+
+		<div class="card mb-4 border-0">
+			<ul id="tasksList" class="list-group">
+				<li id="emptyList" class="list-group-item empty-list">
+					<img src="img/leaf.svg" width="48" alt="">
+					<div class="empty-list__label display-6">Список дел пуст</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Form -->
+
+		<div class="card border-0">
+			<div class="card__header">Добавить новую задачу</div>
+			<div class="card__body">
+				<form id="form">
+					<div class="form__body mb-3">
+						<input type="text" class="form-control mb-2" id="taskInput" placeholder="Текст задачи" required>
+						<small id="emailHelp" class="form-text text-muted">Что делаем, сколько времени тратим, какой результат получаем.</small>
+					</div>
+					<button type="submit" class="btn btn-primary btn-lg">Добавить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
